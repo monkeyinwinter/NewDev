@@ -1,23 +1,30 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 
+@section('title', 'totot')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+   <div class="row">
+       <div class="col-xl-3">
+           @yield('header_top')
+       </div>
+       <div class="col-xl-6">
+           @yield('header_top')
+       </div>
+       <div class="col-xl-3">
+           @yield('header_top')
+       </div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+   </div>
+@endsection
+@section('header_top')
+    tzatat
+@endsection
 
-                    You are logged in!
-                </div>
-            </div>
+
+@section('header_top')
+    <div class="row">
+        <div class="col-xl-12">
+
         </div>
+
     </div>
-</div>
 @endsection

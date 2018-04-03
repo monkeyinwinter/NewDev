@@ -11,5 +11,16 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
+mix.js(['resources/assets/js/header_script.js',
+    'resources/assets/js/header_script_2.js',],
+    'public/js/script.js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+
+mix.styles([
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'resources/assets/css/custom.css',
+], 'public/css/style.css');
+
+mix.copyDirectory('resources/assets/img', 'public/img');

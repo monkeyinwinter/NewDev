@@ -23,10 +23,17 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $toto=0;
+        $toto += 1;
 
-        return view('home');
+        return view('home', ['toto'=>$toto]);
     }
+    public function contact()
+    {
 
+
+        return view('contact');
+    }
 
 
     public function accueil ()
