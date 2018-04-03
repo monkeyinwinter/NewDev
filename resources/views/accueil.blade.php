@@ -84,6 +84,7 @@
                 </div>
 
                 <div class="links">
+                    <a href="remitest">remitest</a>
                     <a href="https://laravel.com/docs">Sex</a>
                     <a href="https://laracasts.com">accordéon</a>
                     <a href="https://laravel-news.com">Alcool</a>

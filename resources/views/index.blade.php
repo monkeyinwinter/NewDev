@@ -20,6 +20,10 @@
                 height: 100vh;
                 margin: 0;
             }
+            header {
+                height: 3.5em;
+                background: #111111;
+            }
 
             .full-height {
                 height: 100vh;
@@ -39,6 +43,17 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+            }
+            .top-left {
+                position: absolute;
+                left: 10px;
+                top: 18px;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: .1rem;
+                text-decoration: none;
+
             }
 
             .content {
@@ -65,8 +80,13 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+
+<header>
+            <div class="top-left">
+               WATCH AND SHOW
+
+            </div>
+             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -76,7 +96,8 @@
                     @endauth
                 </div>
             @endif
-
+</header>
+            <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
                     Hi Camille ! Could you see how good I am?
