@@ -28,11 +28,10 @@ class HomeController extends Controller
 
         return view('home', ['toto'=>$toto]);
     }
-    public function contact()
+    public function accueiltest ()
     {
 
-
-        return view('contact');
+        return view('accueiltest');
     }
 
 

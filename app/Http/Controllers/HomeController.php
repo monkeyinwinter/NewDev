@@ -25,9 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function accueil ()
+    public function accueiltest ()
     {
-        return view('arts');
+        return view('accueiltest');
     }
 
     public function profilPerso ()

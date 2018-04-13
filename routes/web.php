@@ -2,7 +2,10 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('index');
+Route::get('/', 'HomeController@index')->name('Accueil');
+
+Route::get('/accueiltest', 'HomeController@accueiltest')->name('accueiltest');
+
 
 Route::get('/accueil', 'HomeController@accueil')->name('arts');
 Route::get('/profilPerso', 'HomeController@profilPerso')->name('profilPerso');

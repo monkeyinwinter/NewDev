@@ -1,21 +1,24 @@
 $(document).ready(function(){
 
-  $('#header_fixed').hide();
-  $('.header_top_sub_menu').css({'height':'0'});
+    $('.header_2').hide();
+    $('.header_sub_menu').css({'display':'none'});
 
+    $('.header_1').hover(
+        function () {
+            $('.header_sub_menu').stop(true, false).css({'display':'flex'})
+        },
+        function () {
+            $('.header_sub_menu').stop(true, false).css({'display':'none'})
+        });
 
-  $('#header_contain').hover(
-          function () {
-            $('.header_top_sub_menu').stop(true, false)
-                      			.delay(60)
-                        		.animate({height:'90px'},500)
-          },
-          function () {
-            $('.header_top_sub_menu').stop(true, false)
-                       			 .delay(600)
-                        		 .animate({height:'0px'},500)
-    });
-
+    $('.header_2').hover(
+        function () {
+            $('.header_sub_menu').stop(true, false).css({'display':'flex'})
+        },
+        function () {
+            $('.header_sub_menu').stop(true, false).css({'display':'none'})
+        });
 
 });
+
 

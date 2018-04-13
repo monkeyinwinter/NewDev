@@ -16,7 +16,8 @@ mix.js(['resources/assets/js/header_script.js',
     'public/js/script.js')
    .sass('resources/assets/sass/app.scss', 'public/css');
 
-
+mix.js('resources/assets/js/formulaire.js',
+    'public/js/formulaire.js');
 
 mix.styles([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
